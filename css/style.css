@@ -68,7 +68,7 @@ main {
 .track {
     width: 85%;
     margin: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .search {
@@ -190,6 +190,11 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+    body {
+        width: min(100%, 90rem);
+        margin: auto;
+    }
+
     .download {
         display: inline-block;
     }
@@ -200,24 +205,24 @@ footer {
     }
 
     main {
-        width: 100%;
+        width: min(100%, 90rem);
         margin-bottom: 10rem;
     }
-    
+
     #intro > div + div {
-       width: 50%;
+       width: min(50%, 90rem);
        margin: auto;
        margin-top: 2rem;
     }
     
     .track {
-        width: 50%;
+        width: min(50%, 90rem);
         margin: auto;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     }
     
     .search {
-        width: 100%;
+        width: min(100%, 90rem);
         text-align: left;
         flex-direction: row;
         gap: 3rem;
@@ -233,7 +238,7 @@ footer {
     }
     
     .access {
-        width: 50%;
+        width: min(50%, 90rem);
         margin: auto;
         margin-bottom: 5rem
     }
@@ -249,15 +254,17 @@ footer {
     }
     
     .workflow .workflow__intro {
-        width: 50%;
+        width: min(50%,90rem);
         margin: auto;
         margin-bottom: 5rem;
     }
     
     .workflow .workflow__actions {
-        width: 85%;
+        width: min(85%, 90rem);
         margin: auto;
         display: grid;
+        gap: 2rem;
+        place-items: center;
         grid-template-columns: repeat(3, 1fr);
     }
     
@@ -266,11 +273,11 @@ footer {
     }
     
     .companies {
-        width: 85%;
+        width: min(85%, 90rem);
     }
     
     .clipboard {
-        width: 50%;
+        width: min(50%, 90rem);
         margin: auto;
         margin-bottom: 10rem;
     }
@@ -283,7 +290,7 @@ footer {
     }
     
     .footer {
-        width: 85%;
+        width: min(85%, 90rem);
         margin: auto;
         display: grid;
         grid-template-columns: 75% 25%;
@@ -291,4 +298,53 @@ footer {
         align-items: center;
         row-gap: 0;
     }
+
+    .footer .links {
+        background-color: pink;
+        display: grid;
+        /* grid-template-areas: 
+        'logo faq privacy install'
+        'logo contact kit'; */
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .footer .links > a:nth-child(1){
+        grid-row: 1/3;
+        grid-column: 1/2;
+        /* grid-area: logo; */
+    }
+
+    .footer .links > a:nth-child(2){
+        grid-row: 1/2;
+        grid-column: 2/3;
+        /* grid-area: faq; */
+    }
+
+    .footer .links > a:nth-child(3){
+        grid-row: 1/2;
+        grid-column: 3/4;
+        /* grid-area: contact; */
+    }
+
+    .footer .links > a:nth-child(4){
+        grid-row: 1/2;
+        grid-column: 4/5;
+        /* grid-area: privacy; */
+    }
+    
+    .footer .links > a:nth-child(5){
+        grid-row: 2/3;
+        grid-column: 2/3;
+        /* grid-area: kit; */
+    }
+
+    .footer .links > a:nth-child(6){
+        grid-row: 2/3;
+        grid-column: 3/4;
+        /* grid-area: install; */
+    }
+    
+
 }
