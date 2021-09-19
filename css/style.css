@@ -19,4 +19,276 @@ body {
     width: 100%;
     height: 100%;
     font-size: 1.125rem;
+    text-align: center;
+}
+
+h1, h3 {
+    color: var(--d-gray-blue);
+    margin-bottom: 1rem;
+}
+
+p {
+    color: var(--gray-blue);
+    margin-bottom: 3rem;
+}
+
+.download {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: white;
+}
+
+
+.d-ios {
+    background-color: var(--cyan);
+    margin-bottom: 1.5rem;
+}
+
+.d-mac {
+    background-color: var(--light-blue);
+}
+
+main {
+    width: 100%;
+    margin-bottom: 10rem;
+}
+
+#logo {
+    background: url('../assets/images/bg-header-mobile.png') center center /cover;
+    padding: 5rem 0 2rem 0;
+}
+
+#intro > div + div {
+   width: 85%;
+   margin: auto;
+}
+
+.track {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.search {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.search .search__img > img {
+    width: 100%;
+}
+
+.access {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 5rem
+}
+
+.access > img {
+    width: 100%;
+}
+
+.workflow {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+.workflow .workflow__intro {
+    margin-bottom: 5rem;
+}
+
+.workflow .workflow__actions {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.workflow .workflow__actions > div > img {
+    margin-bottom: 2rem;
+}
+
+.companies {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.clipboard {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+
+footer {
+    background:whitesmoke;
+    text-align: center;
+    display: grid;
+    row-gap: 3rem;
+}
+
+.footer {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    row-gap: 2rem;
+}
+
+.footer .links {
+    display: grid;
+    row-gap: 2rem;
+    padding: 3rem 0 1rem 0;
+}
+
+.footer > .links > a > img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.footer > .links > a {
+    color: var(--d-gray-blue);
+    display: block;
+    text-decoration: none;
+}
+
+.footer > .links > a:hover {
+    color: var(--cyan);
+}
+
+.footer .social {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer .social > a > img:hover {
+    background-color: var(--cyan);
+}
+
+.attribution > p {
+    color: var(--d-gray-blue);
+    margin-bottom: 1rem;
+}
+
+.attribution > p > a {
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+.attribution > p > a:hover {
+    color: var(--cyan);
+}
+
+@media screen and (min-width: 1200px) {
+    .download {
+        display: inline-block;
+    }
+    
+    .d-ios {
+        margin-right: 1.5rem;
+        margin-bottom: 0rem;
+    }
+
+    main {
+        width: 100%;
+        margin-bottom: 10rem;
+    }
+    
+    #intro > div + div {
+       width: 50%;
+       margin: auto;
+       margin-top: 2rem;
+    }
+    
+    .track {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+    
+    .search {
+        width: 100%;
+        text-align: left;
+        flex-direction: row;
+        gap: 3rem;
+    }
+    
+    .search .search__img > img {
+        width: 100%;
+        margin-left: -3rem;
+    }
+
+    .search .search__action {
+        padding-right: 10rem;
+    }
+    
+    .access {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 5rem
+    }
+    
+    .access > img {
+        width: 100%;
+    }
+    
+    .workflow {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+    
+    .workflow .workflow__intro {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+    
+    .workflow .workflow__actions {
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .workflow .workflow__actions > div > img {
+        margin-bottom: 2rem;
+    }
+    
+    .companies {
+        width: 85%;
+    }
+    
+    .clipboard {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 10rem;
+    }
+    
+    footer {
+        background:whitesmoke;
+        text-align: center;
+        display: grid;
+        row-gap: 3rem;
+    }
+    
+    .footer {
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 75% 25%;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 0;
+    }
 }
