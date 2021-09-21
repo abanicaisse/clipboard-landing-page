@@ -210,6 +210,11 @@ footer {
         margin-bottom: 10rem;
     }
 
+    #logo {
+        background: url('../assets/images/bg-header-desktop.png') center center /cover;
+        padding: 8rem 0 2rem 0;
+    }
+
     #intro > div + div {
        width: min(50%, 90rem);
        margin: auto;
@@ -301,11 +306,7 @@ footer {
     }
 
     .footer .links {
-        background-color: pink;
         display: grid;
-        /* grid-template-areas: 
-        'logo faq privacy install'
-        'logo contact kit'; */
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(2, 1fr);
         align-items: center;
